@@ -1,0 +1,61 @@
+//Dropdown menu
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: black;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  background-color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+.dropdown-content a:hover {
+  background-color: #f4f5f8;
+  color: black;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+//Dropdown button
+.dropbtn {
+  padding: 0px 16px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s ease-in-out;
+}
+.dropbtn:after {
+  display: block;
+  content: "";
+  cursor: pointer;
+  border-bottom: solid 3px yellow;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.dropbtn:hover:after {
+  transform: scaleX(1);
+}
+.dropbtn.fromRight:after {
+  transform-origin: 100% 50%;
+}
+.dropbtn.fromLeft:after {
+  transform-origin: 0% 50%;
+}
+
+//Education Dropdown
+.edu-dropdown-content {
+  width: 170px;
+}

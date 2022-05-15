@@ -1,0 +1,53 @@
+//Contact With Us Section
+#contact-us {
+  margin-top: 65px;
+  padding: 100px;
+  background-color: #f4f5f8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  .contact-us-summary {
+    color: $text-color;
+    p {
+      font-size: $font-size;
+    }
+    .bold-font {
+      font-weight: $font-weight;
+      line-height: 1;
+      margin-top: -25px;
+      margin-left: 40px;
+      margin-bottom: 35px;
+    }
+    span {
+      display: block;
+      margin-left: 40px;
+    }
+  }
+  //Contact Form
+  .contact-us-form {
+    min-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    input,
+    select,
+    button {
+      border: none;
+      outline: none;
+      height: 50px;
+      padding: 13px;
+      margin: 5px;
+      flex-grow: 1;
+      color: $text-color;
+    }
+    select {
+      border: 1px solid white;
+    }
+    button {
+      width: 100%;
+      background-color: #fdbc2e;
+      color: white;
+      font-weight: 700;
+      font-size: large;
+    }
+  }
+}

@@ -1,0 +1,738 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../components/carousel";
+@import "../components/dropdown";
+@import "../layout/header";
+@import "../layout/navigation";
+@import "../layout/footer";
+@import "../layout/forms";
+
+//Explore New World Section
+.explore-new-world {
+  display: flex;
+  background-size: cover;
+  width: 93%;
+  margin-left: 48px;
+}
+
+//Slider Navbar
+.slider-navbar {
+  z-index: 1;
+  position: absolute;
+  margin-left: 55px;
+  margin-top: -7px;
+  ul {
+    padding-left: 200px;
+    li {
+      a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        b {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+//MEHEMMED------------------
+//Education Fields Section
+
+// Main Education Fields Container
+.edu-fields {
+  display: flex;
+  width: 100%;
+  height: 328px;
+  padding: 100px 0 500px 0;
+}
+//Education Summary
+.education-summary {
+  width: 44%;
+  h2 {
+    font-weight: 800;
+    color: $text-color;
+    font-size: 50px;
+    margin-bottom: -15px;
+  }
+  #fields-text {
+    font-size: 35px;
+    color: $text-color;
+  }
+  #summary-text {
+    padding-top: 28px;
+    color: $text-color;
+  }
+}
+
+//Education Fields SubContainer
+.fields-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fields-container a {
+  text-decoration: none;
+}
+//All Education Fields Categories
+.categories {
+  padding: 15px;
+  border: 1px solid #d3d3d5;
+  transition: 0.5s;
+  h3 {
+    color: black;
+    font-weight: 700;
+    margin-top: 50px;
+  }
+  &:hover {
+    transform: scale(1.1);
+    border: 0;
+    z-index: 1;
+    a {
+      filter: invert(100%);
+    }
+  }
+}
+.digital-marketing {
+  &:hover {
+    background-color: rgba(102, 4, 119, 0.932);
+  }
+}
+.design {
+  &:hover {
+    background-color: rgb(219, 190, 24);
+  }
+}
+.programming {
+  &:hover {
+    background-color: rgb(20, 110, 228);
+  }
+}
+.system {
+  &:hover {
+    background-color: green;
+  }
+}
+
+//GULCHIN------------------------------------------------
+//Why Code Academy Section
+
+//Why Code Academy Summary
+.why-code-summary {
+  p {
+    font-size: $font-size;
+    color: $text-color;
+    margin-bottom: -25px;
+  }
+  img {
+    margin: 55px 0;
+  }
+}
+
+//Main Card Container
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  .card-item {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    .img-div {
+      img {
+        height: 208.06px;
+        width: 208.06px;
+      }
+    }
+    .card-item-summary {
+      margin-right: 45px;
+      h3 {
+        font-weight: 700;
+        font-size: 21px;
+      }
+      a {
+        text-decoration: none;
+        color: $font-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+//EMILIA---------------------------
+//Statistic Information Section
+#statistics-section {
+  background: rgba(0, 0, 0, 0.5)
+    url(https://2022.code.edu.az/wp-content/uploads/2021/09/code-academy-bg.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  height: 100%;
+  .main-container {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+}
+.statistics-summary {
+  z-index: 0;
+  h2 {
+    @include alert(25px, 700);
+  }
+}
+.statistics-items {
+  display: flex;
+  z-index: 0;
+}
+.each-item {
+  .number {
+    @include alert(70px, 800, 40px);
+  }
+  .number-text {
+    @include alert(35px, 300, -35px);
+    line-height: 1em;
+    letter-spacing: -1px;
+  }
+}
+
+//ELNARE-------------------
+//Graduates Section
+.header-text {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 285;
+  margin-top: 45px;
+  margin-bottom: 15px;
+  color: $text-color;
+  b {
+    font-weight: 800;
+  }
+}
+
+//Slider Texts
+.slide-text {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  color: #4a4a4a;
+  padding: 0 248px;
+}
+//Graduates and informations about them
+.graduate {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 40%;
+  padding-bottom: 50px;
+}
+.graduate-info {
+  span {
+    font-size: 21px;
+    font-weight: 900;
+    color: #4a4a4a;
+  }
+  p {
+    color: rgb(145, 142, 142);
+    font-size: 16.3px;
+  }
+}
+
+//Partners part
+.partners {
+  img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.partners-header {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 285;
+  color: #4a4a4a;
+  margin-top: 42px;
+}
+.partners-header-text {
+  font-weight: 800;
+  text-align: center;
+  font-size: 50px;
+  color: #4a4a4a;
+  margin-top: -54.5px;
+  margin-bottom: 35px;
+}
+.partners-summary-text {
+  color: #4a4a4a;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  padding: 0 248px;
+}
+.partners-logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 150px;
+  img {
+    align-content: center;
+    align-items: center;
+    max-width: 120px;
+    max-height: 60px;
+    margin-top: 40px;
+  }
+}
+
+//GULCHIN----------
+//Our Graduates Section
+
+//Our Gradautes Summary
+.summary {
+  .yellow-line {
+    width: 130px;
+    background-color: #fdbc2e;
+    height: 3px;
+    margin: 35px auto;
+  }
+  p {
+    color: $text-color;
+    font-size: $font-size;
+    text-align: center;
+    margin-bottom: -25px;
+  }
+  .bold-font {
+    font-weight: $font-weight;
+  }
+}
+//Our Graduates All Cards
+.cards {
+  margin-left: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  .hover-layer {
+    position: absolute;
+    margin-top: -150px;
+    height: 150px;
+    width: 150px;
+    color: white;
+    padding: 15px;
+    visibility: hidden;
+    h3 {
+      font-weight: 700;
+      font-size: $font-size/2.5;
+    }
+    p {
+      font-size: $font-size/4;
+    }
+  }
+
+  //Field Names
+  .system {
+    background-color: rgba(37, 175, 95, 0.8);
+  }
+  .design {
+    background-color: rgba(245, 197, 32, 0.8);
+  }
+  .programming {
+    background-color: rgba(56, 134, 190, 0.8);
+  }
+  .digital-marketing {
+    background-color: rgba(120, 44, 130, 0.7);
+  }
+  //Card Item Hover Effect
+  .card_item {
+    &:hover {
+      transition: 1s;
+      transform: rotateY(180deg);
+
+      .hover-layer {
+        visibility: visible;
+        transform: rotateY(-180deg);
+      }
+    }
+  }
+}
+
+//Responsiveness
+@media screen and (min-width: 1200px) {
+  #contact-us {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    min-width: 1233px;
+  }
+  .carousel-item {
+    min-width: 1139px;
+  }
+  .main {
+    min-width: 1165px;
+  }
+  #contact-us {
+    justify-content: center;
+    min-width: 1165px;
+  }
+  #more-details {
+    min-width: 1200px;
+    .detail-item {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  #statistics-section {
+    min-width: 1240px;
+  }
+  #contact-us {
+    min-width: 1240px;
+  }
+  #contact-info {
+    min-width: 1240px;
+  }
+  #socials {
+    min-width: 1240px;
+  }
+  #graduates-section {
+    min-width: 1240px;
+  }
+  .partners {
+    min-width: 1240px;
+  }
+  .summary{
+    margin-left: 250px;
+  }
+  .cards{
+    margin-left: 265px;
+  }
+}
+@media screen and(min-width:768px) and (max-width: 991px) {
+  .carousel-item {
+    min-width: 1042px;
+  }
+  .slider-navbar {
+    display: none;
+  }
+  .explore-new-world {
+    margin-top: 30px;
+    margin-left: -20px;
+    width: 1060px;
+  }
+  header {
+    background-color: white;
+    left: 3%;
+    display: flex;
+    font-family: $primary-font-family;
+    justify-content: space-between;
+    margin-left: 21px;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    padding: 35px 16px;
+    height: 100px;
+    min-width: 1042px;
+    margin-left: -10px;
+  }
+  header {
+    p,
+    .navbar,
+    #search-btn,
+    button {
+      display: none;
+    }
+  }
+  #code-logo,
+  .responsive-icons {
+    display: block;
+  }
+  .responsive-icons {
+    a {
+      padding: 0px 10px;
+    }
+    .fa-bars {
+      padding-left: 50px;
+    }
+  }
+
+  ///MEHEMMED
+  .edu-fields {
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .fields-container {
+    display: block;
+    width: 51%;
+    h3 {
+      display: inline;
+      padding-left: 25px;
+    }
+  }
+
+  //GULCHIN----------------------------------------
+  .main {
+    min-width: 950px;
+    margin-left: 25px;
+    .why-code-summary {
+      p {
+        font-size: $font-size;
+        margin-top: 25px;
+        line-height: 0.8;
+      }
+      div {
+        width: 350px;
+      }
+    }
+    .card-row {
+      min-width: 1000px;
+      display: flex;
+      .card-container {
+        .card-item-summary {
+          h3 {
+            font-size: 25px;
+          }
+          p {
+            font-size: 19px;
+          }
+        }
+      }
+    }
+  }
+
+  //EMILIA----------
+  #statistics-section {
+    min-width: 1042px;
+  }
+  .statistics-items {
+    display: flex;
+  }
+
+  //ELNARE-----
+  #graduates-section {
+    min-width: 1042px;
+  }
+  .slide-text {
+    font-size: 25px;
+    text-align: center;
+  }
+  .partners {
+    min-width: 1042px;
+  }
+
+  //GULCHIN----------
+  #contact-us {
+    min-width: 1042px;
+  }
+  .contact-us-summary {
+    margin-bottom: -100px;
+    span {
+      visibility: hidden;
+    }
+  }
+  .contact-us-form {
+    input,
+    select,
+    button {
+      min-height: 60px;
+      min-width: 286px;
+    }
+  }
+  #more-details {
+    min-width: 1042px;
+  }
+  #contact-info {
+    min-width: 1042px;
+  }
+  #socials {
+    min-width: 1042px;
+  }
+  .summary{
+    margin-left: 200px;
+  }
+  .cards{
+    margin-left: 200px;
+  }
+}
+
+// 576px and 767 px
+@media screen and(min-width:576px) and (max-width: 767px) {
+  .slider-navbar {
+    display: none;
+  }
+  header {
+    background-color: white;
+    padding: 35px 16px;
+    height: 100px;
+    width: 1050px;
+    margin-left: -10px;
+  }
+  header {
+    p,
+    .navbar,
+    #search,
+    button {
+      display: none;
+    }
+  }
+  .explore-new-world {
+    margin-top: 30px;
+    margin-left: -10px;
+    height: 20%;
+    width: 1050px;
+  }
+  #code-logo,
+  .responsive-icons {
+    display: block;
+  }
+  #code-logo img {
+    width: 200px;
+    height: 60px;
+  }
+
+  //MEHEMMED
+  .edu-fields {
+    min-width: 1042px;
+    margin-bottom: 150px;
+    display: block;
+  }
+  .education-summary {
+    margin-left: 15px;
+  }
+  .categories {
+    border: 1px solid #d3d3d5;
+    transition: 0.5s;
+    h3 {
+      display: inline;
+      color: black;
+      margin-top: 50px;
+      margin-left: 20px;
+      font-size: 30px;
+    }
+    &:hover {
+      transform: scale(1.1);
+      border: 0;
+      z-index: 1;
+      a {
+        filter: invert(100%);
+      }
+    }
+  }
+  .digital-marketing {
+    &:hover {
+      background-color: rgba(102, 4, 119, 0.932);
+    }
+  }
+  .design {
+    &:hover {
+      background-color: rgb(219, 190, 24);
+    }
+  }
+  .programming {
+    &:hover {
+      background-color: rgb(20, 110, 228);
+    }
+  }
+  .system {
+    &:hover {
+      background-color: green;
+    }
+  }
+
+  //GULCHIN
+  .main {
+    min-width: 1042px;
+  }
+  .why-code-summary {
+    p {
+      font-size: 34px;
+    }
+  }
+  .img-div {
+    display: none;
+  }
+  .card-container {
+    .card-item {
+      padding-top: 25px;
+      border-top: 1px solid #c5c5c5;
+      .card-item-summary {
+        font-size: 20px;
+        h3 {
+          font-weight: 900;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  //EMILIA------------
+  .statistics-items {
+    display: inline;
+  }
+
+  #statistics-section {
+    min-width: 1042px;
+  }
+
+  //ELNARE------
+  #graduates-section {
+    min-width: 1042px;
+  }
+  .partners {
+    min-width: 1042px;
+  }
+  .partners-logo {
+    display: inline;
+  }
+
+  //GULCHIN---------------
+  #more-details {
+    flex-direction: column;
+  }
+  #contact-us {
+    min-width: 1042px;
+  }
+  .contact-us-summary {
+    margin-bottom: -100px;
+    span {
+      visibility: hidden;
+    }
+  }
+  .contact-us-form {
+    input,
+    select,
+    button {
+      font-size: 25px;
+      min-height: 60px;
+      min-width: 435px;
+    }
+  }
+  #more-details {
+    min-width: 1042px;
+    .detail-item {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  #contact-info {
+    min-width: 1042px;
+  }
+  #socials {
+    min-width: 1042px;
+  }
+  .summary{
+    margin-left: 50%;
+  }
+  .cards{
+    margin-left: 320px;
+  }
+}

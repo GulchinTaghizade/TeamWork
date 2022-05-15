@@ -1,0 +1,38 @@
+.navbar {
+  padding: 20px 14px;
+  margin-left: -40px;
+  ul {
+    list-style-type: none;
+    li {
+      display: inline;
+      a {
+        font-size: $icon-size;
+        color: $text-color;
+        padding-left: 22px;
+      }
+    }
+  }
+}
+
+//Code Logo on Navbar
+#code-logo {
+  display: none;
+  img {
+    width: 150px;
+    height: 45px;
+  }
+}
+
+//Appearing Icons when resolution is changed
+.responsive-icons {
+  display: none;
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 16px 16px;
+    font-size: 25px;
+  }
+  .fa-bars {
+    padding-left: 40px;
+  }
+}
